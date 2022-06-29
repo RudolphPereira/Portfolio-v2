@@ -1,0 +1,70 @@
+@media (hover: none) {
+  .port__about-subtitle-image-container img:hover {
+    filter: grayscale(0);
+  }
+  .port__about-subtitle-image-container img:hover {
+    cursor: grabbing;
+  }
+
+  .port__contact-subtitle span:hover {
+    background: $bodyLightGreyColor;
+    color: $componentBackground;
+  }
+
+  .port__contact-subtitle a:hover {
+    color: $componentBackground;
+  }
+
+  .port__contact-subtitle span:hover a {
+    color: $componentBackground;
+  }
+
+  .port__home-subtitle button:hover {
+    background: $bodyLightGreyColor;
+    color: $componentBackground;
+  }
+
+  .port__projects-card:hover {
+    color: $bodyLightGreyColor;
+    transform: translate(0, -15px);
+  }
+
+  .port__projects-card:hover .port__projects-card-image-container img {
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14),
+      0px 2px 12px rgba(0, 0, 0, 0.06);
+    filter: grayscale(0%);
+    transform: translate(0, -28px);
+  }
+
+  .port__projects-card-text-container a:hover {
+    background: $bodyDarkGreyColor;
+  }
+
+  .port__projects-card:hover .port__projects-card-text-container {
+    transform: translate(0, -15px);
+  }
+
+  .cardOne:hover {
+    background: #ffe5bf;
+  }
+
+  .cardTwo:hover {
+    background: #c2dcff;
+  }
+
+  .cardThree:hover {
+    background: #95e2b5;
+  }
+
+  .cardFour:hover {
+    background: #fbd2c4;
+  }
+
+  .cardFive:hover {
+    background: #e1d5eb;
+  }
+
+  .cardSix:hover {
+    background: #c2c2f8;
+  }
+}
