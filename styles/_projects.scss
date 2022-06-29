@@ -36,6 +36,9 @@
         border-radius: 0.4rem;
         filter: grayscale(100%);
         transition: all 0.3s ease;
+        @include ipad() {
+          filter: grayscale(0%);
+        }
       }
     }
 
@@ -146,6 +149,32 @@
       margin-top: 0.3rem;
       color: $titleSpan;
     }
+  }
+}
+
+@include ipad() {
+  .cardOne {
+    background: #ffe5bf;
+  }
+
+  .cardTwo {
+    background: #c2dcff;
+  }
+
+  .cardThree {
+    background: #95e2b5;
+  }
+
+  .cardFour {
+    background: #fbd2c4;
+  }
+
+  .cardFive {
+    background: #e1d5eb;
+  }
+
+  .cardSix {
+    background: #c2c2f8;
   }
 }
 

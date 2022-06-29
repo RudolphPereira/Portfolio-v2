@@ -718,6 +718,13 @@ a {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 1195px) {
+  .port__projects-card-image-container img {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+}
+
 .port__projects-card:hover .port__projects-card-image-container img {
   -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14), 0px 2px 12px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14), 0px 2px 12px rgba(0, 0, 0, 0.06);
@@ -934,6 +941,27 @@ a {
   width: 100%;
   margin-top: 0.3rem;
   color: rgba(57, 123, 246, 0.596);
+}
+
+@media screen and (max-width: 1195px) {
+  .cardOne {
+    background: #ffe5bf;
+  }
+  .cardTwo {
+    background: #c2dcff;
+  }
+  .cardThree {
+    background: #95e2b5;
+  }
+  .cardFour {
+    background: #fbd2c4;
+  }
+  .cardFive {
+    background: #e1d5eb;
+  }
+  .cardSix {
+    background: #c2c2f8;
+  }
 }
 
 .cardOne:hover {
