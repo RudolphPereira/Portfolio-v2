@@ -1,0 +1,174 @@
+.port__projects {
+  @include sectionPadding();
+  &-title {
+    @include title();
+  }
+
+  &-cards {
+    @include flex(center, center, 0);
+    flex-wrap: wrap;
+    margin: 1rem auto 2rem;
+  }
+
+  &-card {
+    background: $componentBackground;
+    color: $bodyLightGreyColor;
+    max-width: 24rem;
+    height: 30rem;
+    width: 100%;
+    margin: 3rem 1rem 1rem;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $bodyLightGreyColor;
+      transform: translate(0, -15px);
+      // box-shadow: 0 0 5px 0 rgb(230, 226, 226);
+      // box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14),
+      //   0px 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    &-image-container {
+      width: 95%;
+      margin: 0.8rem auto;
+      img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 0.4rem;
+        filter: grayscale(100%);
+        transition: all 0.3s ease;
+      }
+    }
+
+    &:hover &-image-container img {
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14),
+        0px 2px 12px rgba(0, 0, 0, 0.06);
+      filter: grayscale(0%);
+      transform: translate(0, -28px);
+    }
+
+    &-text-container {
+      transition: all 0.3s ease;
+      width: 90%;
+      margin: auto;
+      h2 {
+        font-size: 1.9rem;
+        margin: 1rem 0;
+        color: $bodyDarkGreyColor;
+      }
+
+      span {
+        font-size: 0.9rem;
+        display: inline-block;
+        border: 1px solid $bodyDarkGreyColor;
+        padding: 0.3rem 0.6rem;
+        border-radius: 2rem;
+        background: $bodyDarkGreyColor;
+        color: $bodyBackgroundColor;
+        margin-right: 0.2rem;
+      }
+
+      h4 {
+        font-size: 1.15rem;
+        margin: 1rem 0;
+        font-weight: 400;
+      }
+
+      a {
+        @include pageButtons();
+        width: 7.5rem;
+        background: $bodyBackgroundColor;
+        padding: 0.7rem;
+        font-size: 0.95rem;
+        margin: 0.5rem 0.5rem 1rem 0;
+        &:hover {
+          background: $bodyDarkGreyColor;
+        }
+      }
+    }
+
+    &:hover &-text-container {
+      transform: translate(0, -15px);
+    }
+
+    @include iphoneProMax() {
+      max-width: 100%;
+      height: 34rem;
+    }
+  }
+
+  &-subtitle,
+  &-subtitle-two {
+    @include subtTitle();
+    margin: 1rem auto;
+    p {
+      margin: 2rem auto;
+    }
+    &-image-container {
+      @include flex(0, center, 0);
+      margin-top: 1rem;
+      p {
+        margin: 0 auto;
+      }
+      img {
+        @include smallRudolphImage();
+      }
+      @include iphoneProMax() {
+        margin-top: 2rem;
+      }
+    }
+
+    &-btn {
+      @include pageButtons();
+      @include iphoneProMax() {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &-subtitle {
+    @include flex(flex-start, center, 0);
+    img {
+      @include smallRudolphImage();
+      transform: rotate(0deg);
+    }
+  }
+
+  &-subtitle-two {
+    p {
+      margin-bottom: 0;
+    }
+
+    span {
+      font-style: italic;
+      display: inline-block;
+      text-align: right;
+      width: 100%;
+      margin-top: 0.3rem;
+      color: $titleSpan;
+    }
+  }
+}
+
+.cardOne:hover {
+  background: #ffe5bf;
+}
+
+.cardTwo:hover {
+  background: #c2dcff;
+}
+
+.cardThree:hover {
+  background: #95e2b5;
+}
+
+.cardFour:hover {
+  background: #fbd2c4;
+}
+
+.cardFive:hover {
+  background: #e1d5eb;
+}
+
+.cardSix:hover {
+  background: #c2c2f8;
+}

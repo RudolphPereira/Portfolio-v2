@@ -1,0 +1,56 @@
+// Home Animation
+@keyframes backgroundColorPalette {
+  0% {
+    background: #e2f5e7;
+  }
+
+  25% {
+    background: #e2e7e2;
+  }
+
+  50% {
+    background: rgba(57, 122, 246, 0.33);
+  }
+
+  75% {
+    background: #ffeb88;
+  }
+
+  100% {
+    background: #e1d5eb;
+  }
+}
+
+// Nav Sun Animation
+@keyframes rotateSun {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Nav moon Animation
+@keyframes swingMoon {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+// Background animation
+@keyframes fadeInColor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

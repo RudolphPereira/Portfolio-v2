@@ -1,0 +1,91 @@
+.port__nav {
+  &-menu {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: 9999;
+  }
+
+  &-theme {
+    position: fixed;
+    bottom: 0;
+    margin-left: 1.5rem;
+    z-index: 9999;
+    @include iphoneProMax() {
+      top: 0;
+      right: 0;
+      margin-right: 1rem;
+    }
+  }
+
+  &-list,
+  &-list-two {
+    display: flex;
+    background: rgba(245, 245, 245, 0.98);
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14),
+      0px 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  &-list-two {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    transform: scale(1);
+    transition: all 0.3s ease;
+    @include iphoneProMax() {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+    img {
+      width: 100%;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  &-item-container {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: none;
+    &-sun {
+      animation: rotateSun 6s infinite linear;
+    }
+  }
+
+  &-item-container-two {
+    width: 1.8rem;
+    height: 1.8rem;
+    display: none;
+    &-moon {
+      animation: swingMoon ease-in-out 1.2s infinite;
+    }
+  }
+
+  &-item-container.active,
+  &-item-container-two.active {
+    display: block;
+  }
+
+  &-item {
+    padding: 1.2rem 1.6rem;
+  }
+
+  &-link {
+    color: $bodyDarkGreyColor;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $titleSpan;
+    }
+  }
+}

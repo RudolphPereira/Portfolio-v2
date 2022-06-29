@@ -1,0 +1,54 @@
+// Imports
+@import "./variables";
+@import "./mixins";
+
+// Global Styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  @include ipad() {
+    font-size: 85%;
+  }
+  @include ipadVert() {
+    font-size: 75%;
+  }
+  @include iphoneProMax() {
+    font-size: 73%;
+  }
+}
+
+body {
+  background: $bodyBackgroundColor;
+  font-family: "Fredoka", sans-serif;
+  font-family: "Inter", sans-serif;
+  color: $bodyDarkGreyColor;
+  animation: fadeInColor 2s;
+}
+
+p {
+  color: $bodyLightGreyColor;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Imports
+@import "./animations";
+@import "./main";
+@import "./nav";
+@import "./home";
+@import "./about";
+@import "./projects";
+@import "./contact";
+@import "./footer";

@@ -1,0 +1,95 @@
+.port__contact {
+  @include sectionPadding();
+  &-title {
+    @include title();
+  }
+
+  &-subtitle {
+    @include subtTitle();
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      cursor: pointer;
+      display: inline-block;
+      background: $componentBackground;
+      font-weight: 500;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.4rem;
+      margin: 0.5rem 0;
+      font-family: "Fredoka", sans-serif;
+      font-family: "Inter", sans-serif;
+      transition: all 0.3s ease;
+      &:hover {
+        background: $bodyLightGreyColor;
+        color: $componentBackground;
+      }
+      a {
+        color: $bodyLightGreyColor;
+        &:hover {
+          color: $componentBackground;
+        }
+      }
+    }
+
+    span:hover a {
+      color: $componentBackground;
+    }
+
+    &-image-container {
+      img {
+        width: 16rem;
+        height: 16rem;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &-form {
+    max-width: 60rem;
+    width: 100%;
+    margin: -3.3rem auto auto auto;
+    &-inputs {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      input {
+        width: 49%;
+        outline: none;
+        border: none;
+        background: $componentBackground;
+        color: $bodyDarkGreyColor;
+        padding: 0.7rem 1rem;
+        font-size: 1.1rem;
+        border-radius: 0.4rem;
+        font-family: "Fredoka", sans-serif;
+        font-family: "Inter", sans-serif;
+        // box-shadow: 0 0 5px 0 rgb(230, 226, 226);
+      }
+    }
+
+    button {
+      @include pageButtons();
+      padding: 0.7rem 2rem;
+      margin-top: 0.8rem;
+    }
+  }
+}
+
+.port-contact-form-textarea {
+  width: 100%;
+  border: none;
+  margin-top: 1rem;
+  background: $componentBackground;
+  color: $bodyDarkGreyColor;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  outline: none;
+  resize: none;
+  border-radius: 0.4rem;
+  font-family: "Fredoka", sans-serif;
+  font-family: "Inter", sans-serif;
+  // box-shadow: 0 0 5px 0 rgb(230, 226, 226);
+}

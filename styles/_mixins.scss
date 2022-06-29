@@ -1,0 +1,114 @@
+// FlexBox
+@mixin flex($justifyContent, $alignItems, $direction) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $direction;
+}
+
+// Main Titles on the page
+@mixin title() {
+  max-width: 80rem;
+  width: 100%;
+  margin: auto;
+  h2 {
+    font-size: 2.7rem;
+  }
+  span {
+    font-style: italic;
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    margin-top: 0.3rem;
+    color: $titleSpan;
+  }
+}
+
+// subtitles on the page
+@mixin subtTitle() {
+  max-width: 60rem;
+  width: 100%;
+  margin: 2rem auto;
+  p {
+    font-size: 1.5rem;
+    color: $bodyLightGreyColor;
+  }
+}
+
+// Page buttons
+@mixin pageButtons() {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: $bodyLightGreyColor;
+  font-size: 1.1rem;
+  background: $componentBackground;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  // box-shadow: 0 0 5px 0 rgb(230, 226, 226);
+
+  &:hover {
+    background: $bodyLightGreyColor;
+    color: $componentBackground;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14),
+      0px 2px 12px rgba(0, 0, 0, 0.06);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+// universal section padding
+@mixin sectionPadding() {
+  padding: 1rem 0 2rem;
+}
+
+// small images on page
+@mixin smallRudolphImage() {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  transform: rotate(5deg);
+}
+
+// Media Queries
+@mixin ipadPro() {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin ipad() {
+  @media screen and (max-width: 1195px) {
+    @content;
+  }
+}
+
+@mixin ipadVert() {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin ipadVertTwo() {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin iphoneProMax() {
+  @media screen and (max-width: 428px) {
+    @content;
+  }
+}
+
+@mixin iphonePro() {
+  @media screen and (max-width: 395px) {
+    @content;
+  }
+}

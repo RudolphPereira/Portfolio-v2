@@ -1,0 +1,9 @@
+.port__footer {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 0 8rem;
+  @include iphoneProMax() {
+    padding: 0 0.5rem 8rem;
+  }
+}

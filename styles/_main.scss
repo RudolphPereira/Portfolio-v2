@@ -1,0 +1,9 @@
+.port {
+  max-width: 1500px;
+  margin: auto;
+  &__main {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+}
