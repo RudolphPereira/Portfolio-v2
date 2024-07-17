@@ -87,5 +87,9 @@
     &:hover {
       color: $titleSpan;
     }
+
+    &.active {
+      color: #95e2b5;
+    }
   }
 }

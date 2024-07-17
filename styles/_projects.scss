@@ -53,6 +53,11 @@
       transition: all 0.3s ease;
       width: 90%;
       margin: auto;
+      .port__projects-card-stack {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
       h2 {
         font-size: 1.9rem;
         margin: 1rem 0;
@@ -154,11 +159,11 @@
 
 @include ipad() {
   .cardOne {
-    background: #ffe5bf;
+    background: #e1d5eb;
   }
 
   .cardTwo {
-    background: #c2dcff;
+    background: #c2c2f8;
   }
 
   .cardThree {
@@ -170,20 +175,20 @@
   }
 
   .cardFive {
-    background: #e1d5eb;
+    background: #ffe5bf;
   }
 
   .cardSix {
-    background: #c2c2f8;
+    background: #c2dcff;
   }
 }
 
 .cardOne:hover {
-  background: #ffe5bf;
+  background: #e1d5eb;
 }
 
 .cardTwo:hover {
-  background: #c2dcff;
+  background: #c2c2f8;
 }
 
 .cardThree:hover {
@@ -195,9 +200,9 @@
 }
 
 .cardFive:hover {
-  background: #e1d5eb;
+  background: #ffe5bf;
 }
 
 .cardSix:hover {
-  background: #c2c2f8;
+  background: #c2dcff;
 }
